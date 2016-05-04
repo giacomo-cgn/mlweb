@@ -24,3 +24,8 @@ body {
   border-bottom: 1px ridge;
   min-height: 400px;
 }
+.row-footer {
+  margin: 0px auto;
+  padding: 20px 0px;
+  background-color: #AfAfAf;
+}
