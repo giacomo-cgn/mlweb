@@ -52,19 +52,13 @@
         </div>
     </nav>
     
+    
     <div class="container">
+        
+        
         <div class="row row-content" id="carousel">
             <div class="col-xs-12">
                 
-                <!--<div ng-controller="CarouselDemoCtrl" id="slides_control">
-                    <div>
-                        <carousel interval="myInterval">
-                            <slide ng-repeat="slide in slides" active="slide.active">
-                                <img ng-src="{{slide.image}}">
-                            </slide>
-                        </carousel>
-                    </div>
-                  </div>-->
 				<div id="mycarousel" class="carousel slide" data-ride="carousel">
 					<ol class="carousel-indicators">
 						<li data-target="#mycarousel" data-slide-to="0" class="active"></li>
@@ -105,6 +99,7 @@
             </div>
         </div>
         
+        
         <div class="row row-content" id="news">
             <div class="col-xs-12">
                 <h2><strong>News</strong></h2>
@@ -116,6 +111,7 @@
             </div>
         </div>
             
+        
         <div class="row row-content" id="download">
             <div class="col-xs-12">
                 <h2><strong>Download</strong></h2>
@@ -135,7 +131,56 @@
             </div>
             <div class="col-hidden-xs col-md-1"></div>
         </div>
+    
+        
+        
+        <div class="row row-content" id="features">
+            <h2>Features</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6">
+                        <div class="well">
+                            <div class="media">
+                                <a class="media-left" href="#">
+                                     <img class="media-object" data-src="#" alt="Feature placeholder image">
+                                </a>
+                                <div class="media-body">
+                                      <h4 class="media-heading">Media heading</h4>
+                                      <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                                  </div>
+                             </div>
+                        </div>
+                    </div>
+                    
+                     <div class="col-xs-12 col-sm-6">
+                        <div class="well">
+                            <div class="media">
+                                <a class="media-left" href="#">
+                                     <img class="media-object" data-src="#" alt="Feature placeholder image">
+                                </a>
+                                <div class="media-body">
+                                      <h4 class="media-heading">Media heading</h4>
+                                      <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                                  </div>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+       
+        </div>
+    
+        
+        
+        
     </div>
+    
+    
+    
+        
+    
     
     <footer class="row-footer">
         <div class="container">
@@ -184,27 +229,7 @@
         </div>
     </footer>
     
-    <script>
-        angular.module('meshLab', ['ui.bootstrap']);
-            function CarouselDemoCtrl($scope){
-              $scope.myInterval = 3000;
-              $scope.slides = [
-                {
-                  image: 'http://lorempixel.com/400/200/'
-                },
-                {
-                  image: 'http://lorempixel.com/400/200/food'
-                },
-                {
-                  image: 'http://lorempixel.com/400/200/sports'
-                },
-                {
-                  image: 'http://lorempixel.com/400/200/people'
-                }
-              ];
-            }
-    </script>
-    
+   
 </body>
 
 </html>
