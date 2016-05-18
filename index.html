@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="meshLab">
+<html lang="en" ng-app>
 
 <head>
      <meta charset="utf-8">
@@ -15,7 +15,9 @@
 
 <!-- Optional theme -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-
+    
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+    
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
@@ -146,7 +148,60 @@
         <div class="row row-content" id="features">
             <h2><strong>Features</strong></h2>
             <div class="container">
-                <div class="row">
+                
+                <div class="row row-content"
+                      ng-init="
+                         feature=
+                         {
+                           name:'feature 1',
+                           image: 'img/Carousel/SurfaceOffsetting.png',
+                           description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+                        }">
+                    
+                 <div class="row row-content"
+                       ng-init="
+                         features=[
+                         {
+                           name:'feature 1',
+                           image: 'img/Carousel/SurfaceOffsetting.png',
+                           description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+                        },
+                        {
+                          name:'feature 2',
+                           image: 'img/Carousel/SurfaceOffsetting.png',
+                           description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+                        },
+                        {
+                           name:'feature 3',
+                           image: 'img/Carousel/SurfaceOffsetting.png',
+                           description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+                        },
+                        {
+                           name:'feature 4',
+                           image: 'img/Carousel/SurfaceOffsetting.png',
+                           description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+                        }
+                        ]">
+                    
+                <div class="col-xs-12">
+                    <ul class="media-list">
+                        <li class="media" ng-repeat="feature in features">
+                            <div class="media-left media-middle">
+                                <a href="#">
+                                <img class="media-object img-thumbnail"
+                                 ng-src={{feature.image}}>
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h2 class="media-heading">{{feature.name}}</h2>
+                                <p>{{feature.description}}</p>> 
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            
+                
+               <!-- <div class="row">
                     <div class="col-xs-12 col-sm-6">
                         <div class="well">
                             <div class="media-left media-middle">
@@ -197,7 +252,7 @@
                             </div>
                         </div>  
                     </div>
-                </div>
+                </div>-->
             </div>
             
        
