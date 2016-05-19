@@ -42,12 +42,12 @@
             </div>
 			<div id="MLnavbar" class="navbar-collapse collapse">	
 				<ul class="nav navbar-nav">
-					 <li class="active"><a href="#carousel"><i class="fa fa-home fa-fw"></i> Home</a></li>
+					 <li><a href="#carousel"><i class="fa fa-home fa-fw"></i> Home</a></li>
 					 <li><a href="#news"><i class="fa fa-newspaper-o fa-fw"></i> News</a></li>
 				    <li><a href="#download"><i class="fa fa-cloud-download fa-fw"></i> Download</a></li>
-                    <li><a href="#"><i class="fa fa-tasks fa-fw"></i> Features</a></li>
-                    <li><a href="#"><i class="fa fa-question-circle fa-fw"></i> Support</a></li>
-                    <li><a href="#"><i class="fa fa-envelope fa-fw"></i> About</a></li>
+                    <li><a href="#features"><i class="fa fa-tasks fa-fw"></i> Features</a></li>
+                    <li><a href="#support"><i class="fa fa-question-circle fa-fw"></i> Support</a></li>
+                    <li><a href="#about"><i class="fa fa-envelope fa-fw"></i> About</a></li>
 				</ul>
  
 			</div>
@@ -155,153 +155,103 @@
                            image: 'img/Carousel/SurfaceOffsetting.png',
                            description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
                         }">-->
-                    
-                 <div class="row row-content"
-                       ng-init="
-                         features=[
-                         {
-                           name:'feature 1',
-                           image: 'img/Carousel/CurvatureEvaluation.png',
-                           description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
-                        },
-                        {
-                          name:'feature 2',
-                           image: 'img/Carousel/SurfaceOffsetting.png',
-                           description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
-                        },
-                        {
-                           name:'feature 3',
-                           image: 'img/Carousel/SurfaceOffsetting.png',
-                           description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
-                        },
-                        {
-                           name:'feature 4',
-                           image: 'img/Carousel/SurfaceOffsetting.png',
-                           description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
-                        }
-                        ]">
-                    
+                 <div class="col-xs-12 col-md-6">   
+                     <div class="row row-content"
+                           ng-init="
+                             features=[
+                             {
+                               name:'feature 1',
+                               image: 'img/Carousel/CurvatureEvaluation.png',
+                               description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+                            },
+                            {
+                              name:'feature 2',
+                               image: 'img/Carousel/SurfaceOffsetting.png',
+                               description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+                            },
+                            {
+                               name:'feature 3',
+                               image: 'img/Carousel/SurfaceOffsetting.png',
+                               description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+                            },
+                            {
+                               name:'feature 4',
+                               image: 'img/Carousel/SurfaceOffsetting.png',
+                               description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+                            }
+                            ]">
+
+                        <div class="col-xs-12">
+                            <ul class="media-list">
+                                <li class="media" ng-repeat="feature in features">
+                                     <div class="well">
+                                        <div class="media-left media-middle">
+                                            <a href="#">
+                                             <img class="media-object img-thumbnail" width="150" ng-src={{feature.image}}>
+                                            </a>
+                                        </div>
+                                        <div class="media-body">
+                                            <h2 class="media-heading">{{feature.name}}</h2>
+                                            <p>{{feature.description}}</p> 
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>     
+            
+            
                 <div class="col-xs-12 col-md-6">
-                    <ul class="media-list">
-                        <li class="media" ng-repeat="feature in features">
-                             <div class="well">
-                                <div class="media-left media-middle">
-                                    <a href="#">
-                                     <img class="media-object img-thumbnail" width="150" ng-src={{feature.image}}>
-                                    </a>
-                                </div>
-                                <div class="media-body">
-                                    <h2 class="media-heading">{{feature.name}}</h2>
-                                    <p>{{feature.description}}</p> 
-                                </div>
+                    <div class="row row-content"
+                           ng-init="
+                             features2=[
+                             {
+                               name:'feature 5',
+                               image: 'img/Carousel/CurvatureEvaluation.png',
+                               description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+                            },
+                            {
+                              name:'feature 6',
+                               image: 'img/Carousel/SurfaceOffsetting.png',
+                               description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+                            },
+                            {
+                               name:'feature 7',
+                               image: 'img/Carousel/SurfaceOffsetting.png',
+                               description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+                            },
+                            {
+                               name:'feature 8',
+                               image: 'img/Carousel/SurfaceOffsetting.png',
+                               description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+                            }
+                            ]">
+
+                            <div class="col-xs-12">
+                                 <ul class="media-list">
+                                      <li class="media" ng-repeat="feature2 in features2">
+                                          <div class="well">
+                                            <div class="media-left media-middle">
+                                                <a href="#">
+                                                <img class="media-object img-thumbnail" width="150" ng-src={{feature2.image}}>
+                                                </a>
+                                            </div>
+                                            <div class="media-body">
+                                                <h2 class="media-heading">{{feature2.name}}</h2>
+                                                <p>{{feature2.description}}</p> 
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
                             </div>
-                        </li>
-                    </ul>
-                </div>
-            
-                     
-                <div class="row row-content"
-                       ng-init="
-                         features2=[
-                         {
-                           name:'feature 5',
-                           image: 'img/Carousel/CurvatureEvaluation.png',
-                           description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
-                        },
-                        {
-                          name:'feature 6',
-                           image: 'img/Carousel/SurfaceOffsetting.png',
-                           description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
-                        },
-                        {
-                           name:'feature 7',
-                           image: 'img/Carousel/SurfaceOffsetting.png',
-                           description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
-                        },
-                        {
-                           name:'feature 8',
-                           image: 'img/Carousel/SurfaceOffsetting.png',
-                           description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
-                        }
-                        ]">
-                    
-                    <div class="col-xs-12 col-md-6">
-                         <ul class="media-list">
-                              <li class="media" ng-repeat="feature2 in features2">
-                                  <div class="well">
-                                    <div class="media-left media-middle">
-                                        <a href="#">
-                                        <img class="media-object img-thumbnail" width="150" ng-src={{feature2.image}}>
-                                        </a>
-                                    </div>
-                                    <div class="media-body">
-                                        <h2 class="media-heading">{{feature2.name}}</h2>
-                                        <p>{{feature2.description}}</p> 
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
                     </div>
-                
-               <!-- <div class="row">
-                    <div class="col-xs-12 col-sm-6">
-                        <div class="well">
-                            <div class="media-left media-middle">
-                                <a href="#"><img class="media-object img-thumbnail" src="img/Carousel/SurfaceOffsetting.png" alt="Feature placeholder image"  width="150"></a>
-                            </div>
-                            <div class="media-body">
-                                <h2 class="media-heading">Media heading</h2>
-                                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-                            </div>
-                        </div>  
-                    </div>
-                    
-                
-                
-                
-                     <div class="col-xs-12 col-sm-6">
-                        <div class="well">
-                            <div class="media-left media-middle">
-                                <a href="#"><img class="media-object img-thumbnail" src="img/Carousel/SurfaceOffsetting.png" alt="Feature placeholder image"  width="150"></a>
-                            </div>
-                            <div class="media-body">
-                                <h2 class="media-heading">Media heading</h2>
-                                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-                            </div>
-                        </div>  
-                    </div>
-                    
-                    <div class="col-xs-12 col-sm-6">
-                        <div class="well">
-                            <div class="media-left media-middle">
-                                <a href="#"><img class="media-object img-thumbnail" src="img/Carousel/SurfaceOffsetting.png" alt="Feature placeholder image"  width="150"></a>
-                            </div>
-                            <div class="media-body">
-                                <h2 class="media-heading">Media heading</h2>
-                                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-                            </div>
-                        </div>  
-                    </div>
-                    
-                    <div class="col-xs-12 col-sm-6">
-                        <div class="well">
-                            <div class="media-left media-middle">
-                                <a href="#"><img class="media-object img-thumbnail" src="img/Carousel/SurfaceOffsetting.png" alt="Feature placeholder image"  width="150"></a>
-                            </div>
-                            <div class="media-body">
-                                <h2 class="media-heading">Media heading</h2>
-                                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-                            </div>
-                        </div>  
-                    </div>
-                </div>-->
             </div>
-            
        
         </div>
     
         
-        <div class="row row-content">
+        <div class="row row-content" id="support">
             <h2><strong>Support</strong></h2>
             <div class="container">
                 <div class="row">
