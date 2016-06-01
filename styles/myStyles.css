@@ -1,34 +1,45 @@
 .row-header {
-  margin: 0px auto;
-  padding: 0px 0px;
+    margin: 0px auto;
+    padding: 0px 0px;
 }
+
 .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover {
-  color: #000000;
+    color: #000000;
 }
+
 body {
-  align: center;
-  padding: 0px 0px 0px 0px;
-  z-index: 0;
+    align: center;
+    padding: 0px 0px 0px 0px;
+    z-index: 0;
 }
+
 .affix {
-  top: 100px;
+    top: 100px;
 }
+
 #carouselButtons {
-  bottom: 0px;
-  position: absolute;
-  right: 0px;
+    bottom: 0px;
+    position: absolute;
+    right: 0px;
 }
+
 .row-content {
-  margin: 0px auto;
-  padding: 50px 0px;
-  border-bottom: 2px ridge;
-  min-height: 400px;
+    margin: 0px auto;
+    padding: 50px 0px;
+    border-bottom: 2px ridge;
+    min-height: 400px;
 }
+
 .row-footer {
-  margin: 0px auto;
-  padding: 20px 0px;
-  background-color: #AfAfAf;
+    margin: 0px auto;
+    padding: 20px 0px;
+    background-color: #AfAfAf;
 }
+
 .thumbnail {
     margin-bottom: 20px;
+}
+
+.space {
+    padding: 20px
 }
