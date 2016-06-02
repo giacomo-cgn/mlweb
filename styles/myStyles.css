@@ -39,3 +39,24 @@ body {
 .thumbnail {
     margin-bottom: 20px;
 }
+
+.row-description {
+    margin: 0px auto;
+    padding: 50px 0px;
+    background-color: #d2d2d2;
+}
+
+.row-download {
+    margin: 0px auto;
+    padding: 50px 0px;
+    border-bottom: 2px ridge;
+}
+
+.firstword {
+    float: left;
+    font-size: 75px;
+    line-height: 60px;
+    padding-top: 4px;
+    padding-right: 8px;
+    padding-left: 3px;
+}
