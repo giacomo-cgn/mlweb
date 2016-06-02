@@ -52,6 +52,12 @@ body {
     border-bottom: 2px ridge;
 }
 
+.row-carousel {
+    margin: 0px auto;
+    border-bottom: 2px ridge;
+    min-height: 400px;
+}
+
 .firstword {
     float: left;
     font-size: 75px;
@@ -59,4 +65,9 @@ body {
     padding-top: 4px;
     padding-right: 8px;
     padding-left: 3px;
+}
+
+mark {
+    background-color: yellow;
+    color: black;
 }
