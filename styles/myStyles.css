@@ -58,11 +58,6 @@ body {
     border-bottom: 2px ridge;
 }
 
-mark {
-    background-color: yellow;
-    color: black;
-}
-
 .firstword {
     float: left;
     font-size: 40px;
