@@ -23,7 +23,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     <link href="styles/bootstrap-social.css" rel="stylesheet">
-    <link href="styles/mystyles.css" rel="stylesheet">
+    <link href="styles/myStyles.css" rel="stylesheet">
 
 
 </head>
@@ -43,7 +43,7 @@
             </div>
             <div id="MLnavbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="#carousel"><i class="fa fa-home fa-fw"></i> Home</a></li>
+                    <li><a href="#description"><i class="fa fa-home fa-fw"></i> Home</a></li>
                     <li><a href="#news"><i class="fa fa-newspaper-o fa-fw"></i> News</a></li>
                     <li><a href="#download"><i class="fa fa-cloud-download fa-fw"></i> Download</a></li>
                     <li><a href="#features"><i class="fa fa-tasks fa-fw"></i> Features</a></li>
@@ -57,18 +57,23 @@
 
 
     <div class="container">
-
-        <div class="row">
-            <div class="col-xs-12 hidden-sm hidden-md hidden-lg">
-                <div class="space"></div>
+        <div class="jumbotron">
+            <div class="row" id="description">
+                <div class="col-xs-12">
+                    <p class="text-justify">
+                        <br>
+                        <span class="firstword"><strong>MeshLab</strong></span> an open source, portable, and extensible system for the processing and editing of unstructured 3D triangular meshes. It also supports processing of raw data produced with 3D digitization tools/devices, providing a set of tools for editing, cleaning, healing, inspecting, rendering, texturing and converting this kind of models.</p>
+                </div>
             </div>
         </div>
 
-        <div class="row row-content" id="carousel">
+
+        <div class="row row-carousel" id="carousel">
             <div class="col-xs-12">
 
                 <div id="mycarousel" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
+
+                    <!--<ol class="carousel-indicators">
                         <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
                         <li data-target="#mycarousel" data-slide-to="1"></li>
                         <li data-target="#mycarousel" data-slide-to="2"></li>
@@ -84,7 +89,7 @@
                         <li data-target="#mycarousel" data-slide-to="12"></li>
                         <li data-target="#mycarousel" data-slide-to="13"></li>
                         <li data-target="#mycarousel" data-slide-to="14"></li>
-                    </ol>
+                    </ol>-->
 
                     <div class="carousel-inner" role="listbox">
                         <div class="item active"><img class="img-responsive" src="img/Carousel/AutomaticMeshOptimization.png"></div>
@@ -117,6 +122,8 @@
         </div>
 
 
+
+
         <div class="row row-content" id="news">
             <div class="col-xs-12">
                 <h2><strong>News</strong></h2>
@@ -124,12 +131,12 @@
             <div class="col-hidden-xs col-md-1"></div>
             <div class="col-xs-12 col-md-10 push-md-1">
                 <h3>Released version 1.0</h3>
-                <p>erjgneiguehnorgjwijwojfjgowhgw9hi9wg8</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
         </div>
 
 
-        <div class="row row-content" id="download">
+        <div class="row row-download" id="download">
             <div class="col-xs-12">
                 <h2><strong>Download</strong></h2>
             </div>
@@ -152,7 +159,9 @@
 
 
         <div class="row row-content" id="features">
-            <h2><strong>Features</strong></h2>
+            <div class="col-xs-12">
+                <h2><strong>Features</strong></h2>
+            </div>
 
             <div class="col-xs-12 col-md-6">
                 <div class="row" ng-controller="featuresController as featuresCtrl">
@@ -205,7 +214,7 @@
                                         </a>
                                     </div>
                                     <div class="media-body">
-                                        <h2 class="media-heading">{{feature.name}}</h2>
+                                        <h3 class="media-heading">{{feature.name}}</h3>
                                         <p>{{feature.description}}</p>
                                     </div>
                                 </div>
@@ -275,89 +284,158 @@
 
 
         <div class="row row-content" id="support">
-            <h2><strong>Support</strong></h2>
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-6">
-                        <a href="https://www.youtube.com/playlist?list=PL60mCsep96JcJz_SIfXblsVmI1TYMsQJc"><img class="img-responsive thumbnail" src="http://img.youtube.com/vi/FGaNv23Xvtw/0.jpg"></a>
-                    </div>
-                    <div class="col-xs-12 col-sm-6">
-                        <a href="https://www.youtube.com/playlist?list=PL60mCsep96JcJz_SIfXblsVmI1TYMsQJc"><img class="img-responsive thumbnail" src="http://img.youtube.com/vi/FGaNv23Xvtw/0.jpg"></a>
-                    </div>
-                    <div class="col-xs-12 col-sm-6">
-                        <a href="https://www.youtube.com/playlist?list=PL60mCsep96JcJz_SIfXblsVmI1TYMsQJc"><img class="img-responsive thumbnail" src="http://img.youtube.com/vi/FGaNv23Xvtw/0.jpg"></a>
-                    </div>
-                    <div class="col-xs-12 col-sm-6">
-                        <a href="https://www.youtube.com/playlist?list=PL60mCsep96JcJz_SIfXblsVmI1TYMsQJc"><img class="img-responsive thumbnail" src="http://img.youtube.com/vi/FGaNv23Xvtw/0.jpg"></a>
-                    </div>
-                </div>
+            <div class="col-xs-12">
+                <a href="https://www.youtube.com/user/MrPMeshLabTutorials"><h2><strong>Support</strong></h2></a>
             </div>
-        </div>
+            <div class="container">
 
-    </div>
-
-
-
-
-
-
-    <footer class="row-footer">
-        <div class="container">
-            <div class="row" id="about">
-                <div class="col-xs-5 col-sm-2">
-                    <h5>Links</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#carousel">Home</a></li>
-                        <li><a href="#news">News</a></li>
-                        <li><a href="#download">Download</a></li>
-                        <li><a href="#feature">Features</a></li>
-                        <li><a href="#support">Support</a></li>
-                        <li><a href="#about">About</a></li>
-                    </ul>
-                </div>
-                <div class="col-xs-6 col-sm-3">
-                    <div class="media">
-                        <a class="media-responsive" href="#http://vcg.isti.cnr.it/">
-                            <img id="vclabLogo" class="media-object" src="img/vclab.png" alt="vclab logo" height="80" width="80">
-                        </a>
+                <h3>Mister P. Youtube tutorials</h3>
+                <div class="row">
+                    <div class="col-xs-12 col-md-6">
+                        <div class="media media-left">
+                            <a href="https://www.youtube.com/playlist?list=PL8B1E816EAE236B4D">
+                                <img class="thumbnail" width="200" src="http://img.youtube.com/vi/Sl0vJfmj5LQ/0.jpg">
+                            </a>
+                        </div>
                         <div class="media-body">
-                            <a href="http://vcg.isti.cnr.it">Visual Computing Lab</a>
-                            <br/>
-                            <a href="http://www.isti.cnr.it">ISTI-CNR</a>
-                            <br/> Via Moruzzi 1,
-                            <br/> 56124 Pisa
+                            <h4 class="media-heading">Basics</h4>
+                            <p>This playlist shows the basic concepts for the 3D model handling in MeshLab.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-md-6">
+                        <div class="media media-left">
+                            <a href="https://www.youtube.com/playlist?list=PL60mCsep96JcJz_SIfXblsVmI1TYMsQJc">
+                                <img class="thumbnail" width="200" src="http://img.youtube.com/vi/FGaNv23Xvtw/0.jpg">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">Features</h4>
+                            <p>This playlist describes interesting features of MeshLab: edit, filters, decorations, that can be useful in your everyday "mesh processing" life.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-md-6">
+                        <div class="media media-left">
+                            <a href="https://www.youtube.com/playlist?list=PL53FAE3EB5734126E">
+                                <img class="thumbnail" width="200" src="http://img.youtube.com/vi/4g9Hap4rX0k/0.jpg">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">3D Scanning pipeline</h4>
+                            <p>This playlist describes the main steps of the scanning pipeline performed with MeshLab.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-md-6">
+                        <div class="media media-left">
+                            <a href="https://www.youtube.com/playlist?list=PLBBF41579E4B65566">
+                                <img class="thumbnail" width="200" src="http://img.youtube.com/vi/m2nmeJj5Ij4/0.jpg">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">Cleaning</h4>
+                            <p>This playlist describes way to "clean" your mesh by removing unwanted geometry or attributes.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-12 col-md-6">
+                        <div class="well">
+                            <h3>Bug report</h3>
+                            <br>
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <p>
+                                        Before reporting to GitHub:
+                                        <br><a href="http://www.chiark.greenend.org.uk/~sgtatham/bugs.html"><u>How to report a bug</u></a>
+                                    </p>
+                                </div>
+                                <div class="col-xs-6">
+                                    <a href="https://github.com/cnr-isti-vclab/meshlab/issues" class="btn btn-danger" role="button">Report <i class="fa fa-exclamation-circle fa-fw"></i></a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-md-6">
+                        <div class="well">
+                            <h3>Questions and forum</h3>
+                            <br>
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <p>Link to Stack Overflow forum:</p>
+                                </div>
+                                <div class="col-xs-6">
+                                    <a href="http://stackoverflow.com/questions/ask?tags=meshlab" class="btn btn-primary btn-block" role="button">Ask here <i class="fa fa-question-circle fa-fw"></i></a>
+                                    <a href="http://stackoverflow.com/questions/tagged/meshlab" class="btn btn-primary btn-block" role="button">Search users threads <i class="fa fa-search fa-fw"></i></a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-5">
-                    <table class="table-responsive table-striped table-condensed table-bordered">
-                        <tr>
-                            <td><small><strong><i>Project Leader</i></strong></small></td>
-                            <td><small>  Paolo Cignoni</small></td>
-                        </tr>
-                        <tr>
-                            <td><small><strong><i>Main Developer</i></strong></small></td>
-                            <td><small>  Guido Ranzuglia</small></td>
-                        </tr>
-                        <tr>
-                            <td><small><strong><i>Core Developers</i></strong></small></td>
-                            <td><small>  Marco Callieri, Marco DiBenedetto, Federico Ponchio, Luigi Malomo</small></td>
-                        </tr>
-                    </table>
-                </div>
 
-
-                <div class="col-xs-12 col-sm-2">
-                    <div class="nav navbar-nav" style="padding: 40px 10px;">
-                        <a class="btn btn-social-icon" href="mailto:paolo.cignoni@isti.cnr.it" target="_top"><i class="fa fa-envelope-o"></i></a>
-                        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/MeshLab"><i class="fa fa-facebook"></i></a>
-                    </div>
-                </div>
 
             </div>
         </div>
-    </footer>
-    <script src="featuresList.js"></script>
+
+
+
+
+
+
+
+
+        <footer class="row-footer">
+            <div class="container">
+                <div class="row" id="about">
+
+                    <div class="col-xs-4">
+                        <div class="media">
+                            <a class="media-responsive" href="http://vcg.isti.cnr.it/">
+                                <img id="vclabLogo" class="media-object" src="img/vclab.png" alt="vclab logo" height="80" width="80">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xs-4">
+                        <a href="http://vcg.isti.cnr.it/~cignoni/">Paolo Cignoni</a>
+                        <br/>
+                        <a href="http://vcg.isti.cnr.it">Visual Computing Lab</a>
+                        <br/>
+                        <a href="http://www.isti.cnr.it">ISTI-CNR</a>
+                    </div>
+
+
+                    <div class="col-xs-4">
+                        <div class="nav navbar-nav" style="padding: 40px 10px;">
+                            <a class="btn btn-social-icon" href="mailto:paolo.cignoni@isti.cnr.it" target="_top"><i class="fa fa-envelope-o"></i></a>
+                            <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/MeshLab"><i class="fa fa-facebook"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+        <script src="featuresList.js"></script>
+        <script>
+            (function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r;
+                i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+                a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0];
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+            ga('create', 'UA-8044669-2', 'auto');
+            ga('send', 'pageview');
+        </script>
 
 </body>
 
