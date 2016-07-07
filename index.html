@@ -175,10 +175,18 @@
                                         </div>
                                         <div class="col-xs-12 col-sm-4 col-md-5 col-lg-4">
                                             <div class="media-left media-middle">
-                                                <a href="#">
-                                                    <img class="media-object img-thumbnail" width="150" ng-src={{feature.image}}>
-                                                </a>
+                                                <button type="button" class="btn" data-toggle="modal" data-target="#col0{{$index}}"><img class="media-object img-thumbnail" width="150" ng-src={{feature.image}}></button>
                                             </div>
+                                            <div id=col0{{$index}} class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                        <div class="modal-body">
+                                                            <img ng-src={{feature.image}} class="img-responsive">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
                                         </div>
                                         <div class="col-xs-12 col-sm-8 col-md-7 col-lg-8">
                                             <p class="text-justify">{{feature.description}}</p>
@@ -205,9 +213,16 @@
                                         </div>
                                         <div class="col-xs-12 col-sm-4 col-md-5 col-lg-4">
                                             <div class="media-left media-middle">
-                                                <a href="#">
-                                                    <img class="media-object img-thumbnail" width="150" ng-src={{feature2.image}}>
-                                                </a>
+                                                <button type="button" class="btn" data-toggle="modal" data-target="#col1{{$index}}"><img class="media-object img-thumbnail" width="150" ng-src={{feature2.image}}></button>
+                                            </div>
+                                            <div id=col1{{$index}} class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                        <div class="modal-body">
+                                                            <img ng-src={{feature2.image}} class="img-responsive">
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="col-xs-12 col-sm-8 col-md-7 col-lg-8">
