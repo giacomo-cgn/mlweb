@@ -40,12 +40,9 @@ body {
     margin-bottom: 20px;
 }
 
-
-/*.row-description {
-    margin: 0px auto;
-    top: 50px;
-    background-color: #d2d2d2;
-}*/
+.#description {
+    height: 20px;
+}
 
 .row-small {
     margin: 0px auto;
