@@ -9,7 +9,7 @@
 
 body {
     align: center;
-    padding: 0px 0px 0px 0px;
+    padding-top: 50px;
     z-index: 0;
 }
 
@@ -40,6 +40,38 @@ body {
     margin-bottom: 20px;
 }
 
-.space {
-    padding: 20px
+.#description {
+    height: 20px;
+}
+
+.row-small {
+    margin: 0px auto;
+    padding: 50px 0px;
+    border-bottom: 2px ridge;
+}
+
+.row-support {
+    margin: 0px auto;
+    padding: 50px 0px;
+    min-height: 400px;
+}
+
+.row-carousel {
+    margin: 0px auto;
+}
+
+.firstword {
+    float: left;
+    font-size: 40px;
+    line-height: 25px;
+    padding-top: 10px;
+    padding-right: 8px;
+    padding-left: 3px;
+}
+
+@media screen and (min-width:540px) {
+    .firstword {
+        font-size: 75px;
+        line-height: 60px;
+    }
 }

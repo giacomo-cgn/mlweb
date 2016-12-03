@@ -18,12 +18,13 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
 
+    <link rel="icon" type="image/png" href="img/meshlabjsLogo.png" />
 
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     <link href="styles/bootstrap-social.css" rel="stylesheet">
-    <link href="styles/mystyles.css" rel="stylesheet">
+    <link href="styles/myStyles.css" rel="stylesheet">
 
 
 </head>
@@ -43,7 +44,7 @@
             </div>
             <div id="MLnavbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="#carousel"><i class="fa fa-home fa-fw"></i> Home</a></li>
+                    <li><a href="#description"><i class="fa fa-home fa-fw"></i> Home</a></li>
                     <li><a href="#news"><i class="fa fa-newspaper-o fa-fw"></i> News</a></li>
                     <li><a href="#download"><i class="fa fa-cloud-download fa-fw"></i> Download</a></li>
                     <li><a href="#features"><i class="fa fa-tasks fa-fw"></i> Features</a></li>
@@ -57,50 +58,36 @@
 
 
     <div class="container">
-
-        <div class="row">
-            <div class="col-xs-12 hidden-sm hidden-md hidden-lg">
-                <div class="space"></div>
-            </div>
+        <div class="jumbotron" id="description">
+            <!--<div class="row" >
+                <div class="col-xs-12">-->
+            <p class="text-justify">
+                <span class="firstword"><strong>MeshLab</strong></span> the open source system for processing and editing unstructured 3D triangular meshes. It provides a set of tools for editing, cleaning, healing, inspecting, rendering, texturing and converting meshes. It offers features for processing raw data produced by 3D digitization tools/devices and for preparing models for 3D printing.</p>
+            <!-- </div>
+            </div>-->
         </div>
 
-        <div class="row row-content" id="carousel">
+
+        <div class="row row-carousel" id="carousel">
             <div class="col-xs-12">
 
                 <div id="mycarousel" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#mycarousel" data-slide-to="1"></li>
-                        <li data-target="#mycarousel" data-slide-to="2"></li>
-                        <li data-target="#mycarousel" data-slide-to="3"></li>
-                        <li data-target="#mycarousel" data-slide-to="4"></li>
-                        <li data-target="#mycarousel" data-slide-to="5"></li>
-                        <li data-target="#mycarousel" data-slide-to="6"></li>
-                        <li data-target="#mycarousel" data-slide-to="7"></li>
-                        <li data-target="#mycarousel" data-slide-to="8"></li>
-                        <li data-target="#mycarousel" data-slide-to="9"></li>
-                        <li data-target="#mycarousel" data-slide-to="10"></li>
-                        <li data-target="#mycarousel" data-slide-to="11"></li>
-                        <li data-target="#mycarousel" data-slide-to="12"></li>
-                        <li data-target="#mycarousel" data-slide-to="13"></li>
-                        <li data-target="#mycarousel" data-slide-to="14"></li>
-                    </ol>
 
                     <div class="carousel-inner" role="listbox">
-                        <div class="item active"><img class="img-responsive" src="img/Carousel/AutomaticMeshOptimization.png"></div>
-                        <div class="item"><img class="img-responsive" src="img/Carousel/ColorEnhancementFor3DPrinting1.png"></div>
-                        <div class="item"><img class="img-responsive" src="img/Carousel/ColorEnhancementFor3DPrinting2.png"></div>
-                        <div class="item"><img class="img-responsive" src="img/Carousel/CurvatureEvaluation.png"></div>
-                        <div class="item"><img class="img-responsive" src="img/Carousel/HoleFilling.png"></div>
-                        <div class="item"><img class="img-responsive" src="img/Carousel/MeshDataVisualization.png"></div>
-                        <div class="item"><img class="img-responsive" src="img/Carousel/NoiseRemoval.png"></div>
-                        <div class="item"><img class="img-responsive" src="img/Carousel/PointCloudToSurface.png"></div>
-                        <div class="item"><img class="img-responsive" src="img/Carousel/RangeMapProcessing.png"></div>
-                        <div class="item"><img class="img-responsive" src="img/Carousel/SimplificationTextured.png"></div>
-                        <div class="item"><img class="img-responsive" src="img/Carousel/StateofArtRemeshing.png"></div>
-                        <div class="item"><img class="img-responsive" src="img/Carousel/SupportLargeMeshes1.png"></div>
-                        <div class="item"><img class="img-responsive" src="img/Carousel/SupportLargeMeshes2.png"></div>
-                        <div class="item"><img class="img-responsive" src="img/Carousel/SurfaceOffsetting.png"></div>
+                        <div class="item active"><img class="img-responsive" src="img/Carousel/AutomaticMeshOptimization.jpeg"></div>
+                        <div class="item"><img class="img-responsive" src="img/Carousel/ColorEnhancementFor3DPrinting1.jpeg"></div>
+                        <div class="item"><img class="img-responsive" src="img/Carousel/ColorEnhancementFor3DPrinting2.jpeg"></div>
+                        <div class="item"><img class="img-responsive" src="img/Carousel/CurvatureEvaluation.jpeg"></div>
+                        <div class="item"><img class="img-responsive" src="img/Carousel/HoleFilling.jpeg"></div>
+                        <div class="item"><img class="img-responsive" src="img/Carousel/MeshDataVisualization.jpeg"></div>
+                        <div class="item"><img class="img-responsive" src="img/Carousel/NoiseRemoval.jpeg"></div>
+                        <div class="item"><img class="img-responsive" src="img/Carousel/PointCloudToSurface.jpeg"></div>
+                        <div class="item"><img class="img-responsive" src="img/Carousel/RangeMapProcessing.jpeg"></div>
+                        <div class="item"><img class="img-responsive" src="img/Carousel/SimplificationTextured.jpeg"></div>
+                        <div class="item"><img class="img-responsive" src="img/Carousel/StateofArtRemeshing.jpeg"></div>
+                        <div class="item"><img class="img-responsive" src="img/Carousel/SupportLargeMeshes1.jpeg"></div>
+                        <div class="item"><img class="img-responsive" src="img/Carousel/SupportLargeMeshes2.jpeg"></div>
+                        <div class="item"><img class="img-responsive" src="img/Carousel/SurfaceOffsetting.jpeg"></div>
 
                     </div>
 
@@ -117,28 +104,28 @@
         </div>
 
 
-        <div class="row row-content" id="news">
+
+
+        <div class="row row-small" id="news">
             <div class="col-xs-12">
                 <h2><strong>News</strong></h2>
             </div>
-            <div class="col-hidden-xs col-md-1"></div>
-            <div class="col-xs-12 col-md-10 push-md-1">
-                <h3>Released version 1.0</h3>
-                <p>erjgneiguehnorgjwijwojfjgowhgw9hi9wg8</p>
+            <div class="col-xs-12">
+                <h3>Version 2.0 released</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
         </div>
 
 
-        <div class="row row-content" id="download">
+        <div class="row row-small" id="download">
             <div class="col-xs-12">
                 <h2><strong>Download</strong></h2>
             </div>
-            <div class="col-hidden-xs col-md-1"></div>
-            <div class="col-xs-12 col-md-10 push-md-1">
+            <div class="col-xs-12">
                 <div class="well">
                     <div class="row">
                         <div class="col-xs-12 col-md-8">
-                            <h3>Version 1.0</h3>
+                            <h3>Version 2.0</h3>
                         </div>
                         <div class="col-xs-12 col-md-4">
                             <button type="button" class="btn btn-success btn-lg center-block">Click to download <i class="fa fa-cloud-download fa-fw"></i></button>
@@ -152,61 +139,39 @@
 
 
         <div class="row row-content" id="features">
-            <h2><strong>Features</strong></h2>
+            <div class="col-xs-12">
+                <h2><strong>Features</strong></h2>
+            </div>
 
             <div class="col-xs-12 col-md-6">
                 <div class="row" ng-controller="featuresController as featuresCtrl">
-
-                    <!-- features=[
-                             {
-                               name:'3D Acquisition: Aligning ',
-                               image: 'img/Carousel/CurvatureEvaluation.png',
-                               description:'The raw-data alignment phase (also known as referencing) is a fundamental step in the pipeline for processing 3D scanned data. MeshLab provides various tools for moving these acquisitions in a common reference system; among these, a standard approach is using a fine tuned ICP mesh-to-mesh alignment step, followed by a global error distribution step to manage large set of range-maps. The alignment step can be performed on data coming from several sources, including active (both short- and long-range) scanners and the results produced by 3D-from-image solutions (e.g. SfM).'
-                            },
-                            {
-                              name:'3D Acquisition: Reconstruction',
-                               image: 'img/Carousel/SurfaceOffsetting.png',
-                               description:'The process of transforming independent acquisitions, or point clouds, in a triangulated model can be fulfilled with different algorithmic approaches. MeshLab provides several solutions to reconstruct the shape of an object, ranging from volumetric to implicit surfaces (Screened Poisson).'
-                            },
-                            {
-                               name:'3D Acquisition: Texturing',
-                               image: 'img/Carousel/SurfaceOffsetting.png',
-                               description:'Color information may be as important as geometry, but several acquisition technologies do not provide accurate appearance data. MeshLab contains a pipeline for the alignment and projection of color information (encoded in a set of uncalibrated images) onto a 3D model. Several automatic and assisted methods are provided to obtain a high quality color encoding.'
-                            },
-                            {
-                               name:'Cultural Heritage:  Presentation and analysis',
-                               image: 'img/Carousel/SurfaceOffsetting.png',
-                               description:'A digital 3D model may be a very valuable mean to present and study an artifact. The visualization features of MeshLab (including Manipulators and Shaders) can help in showing the peculiar characteristics of a model. Moreover, processing and editing features (Geometric and Topological analysis, section, measurement) can help the user in extracting and exporting useful information.'
-                            },
-                            {
-                               name:'Cultural Heritage:  Preparing Models...',
-                               image: 'img/Carousel/SurfaceOffsetting.png',
-                               description:'Acquisition and reconstruction are only the first steps of the preparation of a 3D model. A number of additional processing may be needed to prepare a model for its use. MeshLab provides a variety of features to prepare a 3D model, including painting, geo referencing, manipulator, ambient occlusion, etc.'
-                            },
-                            {
-                               name:'3D Printing:  Color Processing',
-                               image: 'img/Carousel/SurfaceOffsetting.png',
-                               description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
-                            },
-                            {
-                               name:'3D Printing:  Cleaning Meshes',
-                               image: 'img/Carousel/SurfaceOffsetting.png',
-                               description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
-                            }
-                            ]"> -->
 
                     <div class="col-xs-12">
                         <ul class="media-list">
                             <li class="media" ng-repeat="feature in featuresCtrl.features1">
                                 <div class="well">
-                                    <div class="media-left media-middle">
-                                        <a href="#">
-                                            <img class="media-object img-thumbnail" width="150" ng-src={{feature.image}}>
-                                        </a>
-                                    </div>
-                                    <div class="media-body">
-                                        <h2 class="media-heading">{{feature.name}}</h2>
-                                        <p>{{feature.description}}</p>
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <h3 class="media-heading">{{feature.name}}</h3>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-4 col-md-5 col-lg-4">
+                                            <div class="media-left media-middle">
+                                                <button type="button" class="btn" data-toggle="modal" data-target="#col0{{$index}}"><img class="media-object img-thumbnail" width="150" ng-src={{feature.image}}></button>
+                                            </div>
+                                            <div id=col0{{$index}} class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                        <div class="modal-body">
+                                                            <img ng-src={{feature.image}} class="img-responsive">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-xs-12 col-sm-8 col-md-7 col-lg-8">
+                                            <p class="text-justify">{{feature.description}}</p>
+                                        </div>
                                     </div>
                                 </div>
                             </li>
@@ -218,51 +183,32 @@
 
             <div class="col-xs-12 col-md-6">
                 <div class="row" ng-controller="featuresController as featuresCtrl">
-                    <!--features2=[
-                             {
-                               name:'3D Printing: Offsetting and hollowing',
-                               image: 'img/Carousel/CurvatureEvaluation.png',
-                               description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
-                            },
-                            {
-                              name:'Raster Layers:integration with images',
-                               image: 'img/Carousel/SurfaceOffsetting.png',
-                               description:'Raster Layers have been introduced in MeshLab to allow to go beyond the standard 3D model. MeshLab users can import in a project also images and other 2D entities. These Raster Layers can be used not only to project color information on the 3D model, but also to generate peculiar points of view, or store an entire acquisition procedure by including also the images used for the generation of the final results.'
-                            },
-                            {
-                               name:'Comparing Meshes:',
-                               image: 'img/Carousel/SurfaceOffsetting.png',
-                               description:'Measuring the Hausdorff Distance between two models is a common approach to compute the geometric difference between two 3D models; it is a quite common task in mesh processing. Many years ago (in 1997!), the Visual Computing Lab developed and freely distributed what become the standard tool for such task, Metro; the related paper has been cited more than one thousand times, thus demonstrating the impact of that work. While the original Metro tool was still a small open source standalone command line program (still available at our web site), MeshLab offers now much more advanced and versatile functionalities for comparing two meshes.'
-                            },
-                            {
-                               name:'Mesh Inspecting and Measuring',
-                               image: 'img/Carousel/SurfaceOffsetting.png',
-                               description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
-                            },
-                            {
-                               name:'Mesh Simplification and Refinement',
-                               image: 'img/Carousel/SurfaceOffsetting.png',
-                               description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
-                            },
-                            {
-                               name:'Mesh Conversion and interchange with other tools',
-                               image: 'img/Carousel/SurfaceOffsetting.png',
-                               description:'MeshLab can open and save a number of different 3D data formats. Moreover, interchange with other tools (including Blender, Photoscan, 3DCoat, VisualSfM) enables its use in the context of complex 3D processing pipelines in a number of different contexts and applications. The scripting functionalities will make this type of use even more easy and unattended.'
-                            }
-                            ]"-->
 
                     <div class="col-xs-12">
                         <ul class="media-list">
                             <li class="media" ng-repeat="feature2 in featuresCtrl.features2">
                                 <div class="well">
-                                    <div class="media-left media-middle">
-                                        <a href="#">
-                                            <img class="media-object img-thumbnail" width="150" ng-src={{feature2.image}}>
-                                        </a>
-                                    </div>
-                                    <div class="media-body">
-                                        <h2 class="media-heading">{{feature2.name}}</h2>
-                                        <p>{{feature2.description}}</p>
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <h3 class="media-heading">{{feature2.name}}</h3>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-4 col-md-5 col-lg-4">
+                                            <div class="media-left media-middle">
+                                                <button type="button" class="btn" data-toggle="modal" data-target="#col1{{$index}}"><img class="media-object img-thumbnail" width="150" ng-src={{feature2.image}}></button>
+                                            </div>
+                                            <div id=col1{{$index}} class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                        <div class="modal-body">
+                                                            <img ng-src={{feature2.image}} class="img-responsive">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-8 col-md-7 col-lg-8">
+                                            <p class="text-justify">{{feature2.description}}</p>
+                                        </div>
                                     </div>
                                 </div>
                             </li>
@@ -274,27 +220,117 @@
         </div>
 
 
-        <div class="row row-content" id="support">
-            <h2><strong>Support</strong></h2>
+        <div class="row row-support" id="support">
+            <div class="col-xs-12">
+                <h2><strong>Support</strong></h2>
+            </div>
             <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-6">
-                        <a href="https://www.youtube.com/playlist?list=PL60mCsep96JcJz_SIfXblsVmI1TYMsQJc"><img class="img-responsive thumbnail" src="http://img.youtube.com/vi/FGaNv23Xvtw/0.jpg"></a>
-                    </div>
-                    <div class="col-xs-12 col-sm-6">
-                        <a href="https://www.youtube.com/playlist?list=PL60mCsep96JcJz_SIfXblsVmI1TYMsQJc"><img class="img-responsive thumbnail" src="http://img.youtube.com/vi/FGaNv23Xvtw/0.jpg"></a>
-                    </div>
-                    <div class="col-xs-12 col-sm-6">
-                        <a href="https://www.youtube.com/playlist?list=PL60mCsep96JcJz_SIfXblsVmI1TYMsQJc"><img class="img-responsive thumbnail" src="http://img.youtube.com/vi/FGaNv23Xvtw/0.jpg"></a>
-                    </div>
-                    <div class="col-xs-12 col-sm-6">
-                        <a href="https://www.youtube.com/playlist?list=PL60mCsep96JcJz_SIfXblsVmI1TYMsQJc"><img class="img-responsive thumbnail" src="http://img.youtube.com/vi/FGaNv23Xvtw/0.jpg"></a>
-                    </div>
+
+                <div class="media-left media-middle">
+                    <a href="https://www.youtube.com/user/MrPMeshLabTutorials">
+                        <img class="media-object img-thumbnail" width="30" src="img/mrP.jpg">
+                    </a>
                 </div>
+                <div class="media-body">
+                    <h3 class="media-heading"><a href="https://www.youtube.com/user/MrPMeshLabTutorials">Mister P.</a> YouTube tutorials</h3>
+                </div>
+
+                <h3></h3>
+                <div class="row">
+                    <div class="col-xs-12 col-md-6">
+                        <div class="media media-left">
+                            <a href="https://www.youtube.com/playlist?list=PL8B1E816EAE236B4D">
+                                <img class="thumbnail" width="200" src="http://img.youtube.com/vi/Sl0vJfmj5LQ/0.jpg">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading"><a href="https://www.youtube.com/playlist?list=PL8B1E816EAE236B4D">Basics</a></h4>
+                            <p>This playlist shows the basic concepts for the 3D model handling in MeshLab.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-md-6">
+                        <div class="media media-left">
+                            <a href="https://www.youtube.com/playlist?list=PL60mCsep96JcJz_SIfXblsVmI1TYMsQJc">
+                                <img class="thumbnail" width="200" src="http://img.youtube.com/vi/FGaNv23Xvtw/0.jpg">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading"><a href="https://www.youtube.com/playlist?list=PL60mCsep96JcJz_SIfXblsVmI1TYMsQJc">Features</a></h4>
+                            <p>This playlist describes interesting features of MeshLab: edit, filters, decorations, that can be useful in your everyday "mesh processing" life.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-md-6">
+                        <div class="media media-left">
+                            <a href="https://www.youtube.com/playlist?list=PL53FAE3EB5734126E">
+                                <img class="thumbnail" width="200" src="http://img.youtube.com/vi/4g9Hap4rX0k/0.jpg">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading"><a href="https://www.youtube.com/playlist?list=PL53FAE3EB5734126E">3D Scanning pipeline</a></h4>
+                            <p>This playlist describes the main steps of the scanning pipeline performed with MeshLab.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-md-6">
+                        <div class="media media-left">
+                            <a href="https://www.youtube.com/playlist?list=PLBBF41579E4B65566">
+                                <img class="thumbnail" width="200" src="http://img.youtube.com/vi/m2nmeJj5Ij4/0.jpg">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading"><a href="https://www.youtube.com/playlist?list=PLBBF41579E4B65566">Cleaning</a></h4>
+                            <p>This playlist describes way to "clean" your mesh by removing unwanted geometry or attributes.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col-xs-12 col-md-6">
+                        <div class="well">
+                            <h3>Questions and forum</h3>
+                            <br>
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <p>Stack Overflow
+                                        <br> <small>(tagging with MeshLab)</small></p>
+                                </div>
+                                <div class="col-xs-6">
+                                    <a href="http://stackoverflow.com/questions/tagged/meshlab" class="btn btn-primary btn-block" role="button">Search MeshLab Threads <i class="fa fa-search fa-fw"></i></a>
+                                    <a href="http://stackoverflow.com/questions/ask?tags=meshlab" class="btn btn-primary btn-block" role="button">Ask About MeshLab  <i class="fa fa-question-circle fa-fw"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <div class="well">
+                            <h3>Bug report</h3>
+                            <br>
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <p>
+                                        Before reporting to GitHub:
+                                        <br><a href="http://www.chiark.greenend.org.uk/~sgtatham/bugs.html"><u>How to report a bug</u></a>
+                                    </p>
+                                </div>
+                                <div class="col-xs-6">
+                                    <a href="https://github.com/cnr-isti-vclab/meshlab/issues" class="btn btn-danger" role="button">Report <i class="fa fa-exclamation-circle fa-fw"></i></a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
             </div>
         </div>
-
     </div>
+
 
 
 
@@ -304,60 +340,64 @@
     <footer class="row-footer">
         <div class="container">
             <div class="row" id="about">
-                <div class="col-xs-5 col-sm-2">
-                    <h5>Links</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#carousel">Home</a></li>
-                        <li><a href="#news">News</a></li>
-                        <li><a href="#download">Download</a></li>
-                        <li><a href="#feature">Features</a></li>
-                        <li><a href="#support">Support</a></li>
-                        <li><a href="#about">About</a></li>
-                    </ul>
-                </div>
-                <div class="col-xs-6 col-sm-3">
-                    <div class="media">
-                        <a class="media-responsive" href="#http://vcg.isti.cnr.it/">
-                            <img id="vclabLogo" class="media-object" src="img/vclab.png" alt="vclab logo" height="80" width="80">
-                        </a>
-                        <div class="media-body">
-                            <a href="http://vcg.isti.cnr.it">Visual Computing Lab</a>
-                            <br/>
-                            <a href="http://www.isti.cnr.it">ISTI-CNR</a>
-                            <br/> Via Moruzzi 1,
-                            <br/> 56124 Pisa
-                        </div>
-                    </div>
-                </div>
+
                 <div class="col-xs-12 col-sm-5">
-                    <table class="table-responsive table-striped table-condensed table-bordered">
-                        <tr>
-                            <td><small><strong><i>Project Leader</i></strong></small></td>
-                            <td><small>  Paolo Cignoni</small></td>
-                        </tr>
-                        <tr>
-                            <td><small><strong><i>Main Developer</i></strong></small></td>
-                            <td><small>  Guido Ranzuglia</small></td>
-                        </tr>
-                        <tr>
-                            <td><small><strong><i>Core Developers</i></strong></small></td>
-                            <td><small>  Marco Callieri, Marco DiBenedetto, Federico Ponchio, Luigi Malomo</small></td>
-                        </tr>
-                    </table>
+
+                    <a href="http://www.cnr.it/">
+                        <img src="img/cnrLogo.png" alt="cnr logo" height="80" width="80">
+                    </a>
+
+
+                    <a href="http://www.isti.cnr.it/">
+                        <img src="img/istiLogo.png" alt="isti logo" height="80" width="80">
+                    </a>
+
+                    <a href="http://vcg.isti.cnr.it/">
+                        <img src="img/vclab.png" alt="vclab logo" height="80" width="80">
+                    </a>
+
                 </div>
 
+                <div class="col-xs-12 hidden-sm hidden-md hidden-lg" style="padding:10px;"></div>
 
-                <div class="col-xs-12 col-sm-2">
-                    <div class="nav navbar-nav" style="padding: 40px 10px;">
+                <div class="col-xs-6 col-sm-4">
+                    <a href="http://vcg.isti.cnr.it/~cignoni/">Paolo Cignoni</a>
+                    <br/>
+                    <a href="http://vcg.isti.cnr.it">Visual Computing Lab</a>
+                    <br/>
+                    <a href="http://www.isti.cnr.it">ISTI-CNR</a>
+                </div>
+
+                <div class="col-xs-6 col-sm-3">
+                    <div class="nav navbar-nav">
                         <a class="btn btn-social-icon" href="mailto:paolo.cignoni@isti.cnr.it" target="_top"><i class="fa fa-envelope-o"></i></a>
                         <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/MeshLab"><i class="fa fa-facebook"></i></a>
                     </div>
                 </div>
 
+
+
+
             </div>
         </div>
     </footer>
     <script src="featuresList.js"></script>
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-8044669-2', 'auto');
+        ga('send', 'pageview');
+    </script>
 
 </body>
 
